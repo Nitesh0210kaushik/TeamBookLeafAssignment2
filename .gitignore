@@ -1,0 +1,36 @@
+# Personal notes (never pushed)
+ASSIGNMENT2_GUIDE.md
+BUILD_STEPS.md
+DATA_ENTRY.md
+WORKDONE.md
+N8N_GUIDE.md
+LEARNING_NOTES*.md
+notes/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Recordings and large media (share a link instead)
+*.mp4
+*.mov
+*.webm
+*.mkv
+
+# Logs and OS / editor files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
