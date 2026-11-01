@@ -13,6 +13,27 @@ https://nitesh2kaushik.bubbleapps.io/version-test/
 Test credentials should be shared privately with the reviewer. They are not stored
 in this repository.
 
+## Demo testing credentials
+
+These are demo accounts created only for assignment review:
+
+| Role | Email | Password |
+| --- | --- | --- |
+| Admin | `admin@bookleaf.com` | `Admin@123` |
+| Author — Priya Sharma | `priya.sharma@email.com` | `Author@123` |
+| Author — Rohit Kapoor | `rohit.kapoor@email.com` | `Author@123` |
+| Author — Ananya Reddy | `ananya.reddy@email.com` | `Author@123` |
+| Author — Vikram Joshi | `vikram.joshi@email.com` | `Author@123` |
+| Author — Meera Nair | `meera.nair@email.com` | `Author@123` |
+| Author — Arjun Malhotra | `arjun.malhotra@email.com` | `Author@123` |
+| Author — Sneha Kulkarni | `sneha.kulkarni@email.com` | `Author@123` |
+| Author — Farhan Sheikh | `farhan.sheikh@email.com` | `Author@123` |
+| Author — Kavita Deshmukh | `kavita.deshmukh@email.com` | `Author@123` |
+| Author — Diya Chatterjee | `diya.chatterjee@email.com` | `Author@123` |
+
+These credentials are for the public demo application only and must not be reused
+for any real account.
+
 ## Main features
 
 - Author signup and login.
