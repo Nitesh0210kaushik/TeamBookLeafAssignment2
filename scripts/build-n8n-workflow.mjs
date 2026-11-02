@@ -183,11 +183,11 @@ const nodes = [
       "Optional bonus. Add an SMTP credential, set a test inbox (never the dataset's real-looking author emails), then enable this node.",
   },
   {
-    ...respondNode("Respond 200 (Success)", 200, [2860, 120]),
+    ...respondNode("Respond 202 (Accepted)", 202, [2860, 120]),
     parameters: {
       respondWith: "json",
       responseBody: "={{ JSON.stringify($('Parse AI output').first().json) }}",
-      options: { responseCode: 200 },
+      options: { responseCode: 202 },
     },
   },
   {
@@ -233,7 +233,7 @@ const nodes = [
     waitBetweenTries: 1000,
     onError: "continueRegularOutput",
   },
-  respondNode("Respond 200 (Failed)", 200, [2860, 520]),
+  respondNode("Respond 202 (Accepted — Failed result)", 202, [2860, 520]),
 ];
 
 const to = (node, index = 0) => ({ node, type: "main", index });
@@ -249,9 +249,9 @@ const connections = {
   "Build royalty facts": { main: [[to("Generate email (AI)")]] },
   "Generate email (AI)": { main: [[to("Parse AI output")], [to("Format failure")]] },
   "Parse AI output": { main: [[to("Update NotificationLog (Success)")], [to("Format failure")]] },
-  "Update NotificationLog (Success)": { main: [[to("Respond 200 (Success)")]] },
+  "Update NotificationLog (Success)": { main: [[to("Respond 202 (Accepted)")]] },
   "Format failure": { main: [[to("Update NotificationLog (Failed)")]] },
-  "Update NotificationLog (Failed)": { main: [[to("Respond 200 (Failed)")]] },
+  "Update NotificationLog (Failed)": { main: [[to("Respond 202 (Accepted — Failed result)")]] },
 };
 
 const workflow = {

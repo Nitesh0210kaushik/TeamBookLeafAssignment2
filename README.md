@@ -10,9 +10,6 @@ Bubble test application:
 
 https://nitesh2kaushik.bubbleapps.io/version-test/
 
-Test credentials should be shared privately with the reviewer. They are not stored
-in this repository.
-
 ## Demo testing credentials
 
 These are demo accounts created only for assignment review:
@@ -96,6 +93,8 @@ invalid input, duplicate requests, AI-output parsing, and failure formatting.
 5. Activate the workflow and verify the webhook execution.
 
 Credentials are intentionally not embedded in the workflow JSON or source code.
+The webhook key, Bubble token, and AI-provider key must be entered only in the
+relevant service credential settings.
 
 ## Environment variables
 
@@ -117,15 +116,3 @@ service credential managers.
   configured outside this repository.
 - The repository contains the reproducible workflow and test logic; service secrets
   are provided separately to an authorised reviewer.
-
-## Submission contents
-
-Only project files required to reproduce or review the assignment should be pushed:
-
-- Source workflow and Code node files.
-- Sample data.
-- Prompt and test scripts.
-- `.env.example`, `.gitignore`, and this README.
-
-Local secrets, screenshots, temporary files, editor files, and personal notes are
-excluded from the submission.

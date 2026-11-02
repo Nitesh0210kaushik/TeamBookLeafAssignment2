@@ -296,10 +296,10 @@
         "respondWith": "json",
         "responseBody": "={{ JSON.stringify($('Parse AI output').first().json) }}",
         "options": {
-          "responseCode": 200
+          "responseCode": 202
         }
       },
-      "name": "Respond 200 (Success)",
+      "name": "Respond 202 (Accepted)",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
@@ -386,10 +386,10 @@
         "respondWith": "json",
         "responseBody": "={{ JSON.stringify($json) }}",
         "options": {
-          "responseCode": 200
+          "responseCode": 202
         }
       },
-      "name": "Respond 200 (Failed)",
+      "name": "Respond 202 (Accepted — Failed result)",
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
@@ -573,7 +573,7 @@
       "main": [
         [
           {
-            "node": "Respond 200 (Success)",
+            "node": "Respond 202 (Accepted)",
             "type": "main",
             "index": 0
           }
@@ -595,7 +595,7 @@
       "main": [
         [
           {
-            "node": "Respond 200 (Failed)",
+            "node": "Respond 202 (Accepted — Failed result)",
             "type": "main",
             "index": 0
           }
